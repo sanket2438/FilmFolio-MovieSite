@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+ /* ****************************** MovieSearch start ********************************** */
+  h1, h2, h3 {
+    margin-top: 20px;
+  }
+
+  /* Underline hover effect for "Movie Search" heading */
+.movie-search-heading {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.movie-search-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjusts the underline position */
+  width: 0;
+  height: 2px;
+  background-color:  #0056b3; /* Choose an underline color */
+  transition: width 0.3s ease;
+}
+
+.movie-search-heading:hover::after {
+  width: 100%; /* Expands underline to full width on hover */
+}
+
+
+  .search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .search-button {
+    border-radius: 0 10px 10px 0;
+    background-color: #000307;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  /* ****************************** MovieSearch end ********************************** */
+
+
+  
+  /* ****************************** MovieDetails start ********************************** */
+  .back-button {
+    display: inline-block;
+    background-color: #010a13;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+
+.movie-details-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.movie-details-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-details-poster {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.movie-details-content {
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.movie-details-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.movie-details-content p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.movie-details-content strong {
+  color: #222;
+}
+/* ****************************** MovieDetails end ********************************** */
+
+
+
+/* ****************************** MovieCard Start ********************************** */
+.movie-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.movie-card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.movie-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.movie-year {
+  color: #666;
+  font-size: 0.9em;
+}
+/* ****************************** MovieCard end ********************************** */
